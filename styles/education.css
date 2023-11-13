@@ -1,0 +1,113 @@
+.education {
+    color: var(--first-color);
+    background: var(--second-color);
+    padding: 4em 1em;
+    text-align: center;
+}
+
+.education__certificate {
+    /* Estilos para os grupos de certificados */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centralize os grupos */
+    gap: 20px;
+}
+
+
+.education__item {
+    /* Estilos para cada grupo de certificado */
+    list-style: none;
+    padding: 0;
+    border: 1px solid #000;
+    text-align: center;
+    margin: 10px; /* Espaçamento entre os certificados */
+    flex-basis: calc(33.33% - 20px); /* 20px de espaçamento entre os grupos */
+    box-sizing: border-box;
+}
+
+.education__title {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.education__title-section {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+.education__text {
+    margin: 1em 0.5em 0.5em 0;
+}
+
+.education__link {
+    text-decoration: none;
+    border: 1px solid rgb(201, 201, 201);
+    padding: 0 1em;
+    margin: 1.5em 1em;
+    color: var(--second-color);
+    background-color: rgb(201, 201, 201);
+}
+
+
+.education__item-lang {
+    display: flex ;
+    justify-content:space-between;
+}
+.education__star {
+    width: 30px;
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .education {
+        padding: 4em 3em;
+    }
+
+    .education__title {
+        font-size: 38px;
+        text-align: left;
+    }
+
+    .education__certificate {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px; /* Espaçamento entre os grupos de certificados */
+        flex-basis: calc(50% - 20px); /* 20px de espaçamento entre as colunas */
+        box-sizing: border-box;
+        margin-bottom: 4em;
+    }   
+   
+    .education__langage {
+        padding: 0 30%;
+    }
+}
+
+@media screen and (min-width:1728px) {
+
+    .education {
+        padding: 4em 20%;
+    }
+
+    .education__title {
+        text-align: center;
+        font-size: 72px;
+        padding-bottom: 1em;
+    }
+
+    .education__langage {
+        padding: 0 30%;
+    }
+
+    .education__link:hover {
+        text-decoration: none;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 0 1em;
+        margin: 1.5em 1em;
+        color: var(--second-color);
+        background-color: rgb(255, 255, 255);
+    }
+}

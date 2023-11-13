@@ -1,0 +1,21 @@
+@import url(styles/header.css);
+@import url(styles/banner.css);
+@import url(styles/about.css);
+@import url(styles/education.css);
+@import url(styles/professional.css);
+@import url(styles/contact.css);
+@import url(styles/footer.css);
+
+:root{
+    --first-color: #fff;
+    --second-color: #000;
+    --tird-color: #525252;
+    --font-princial: "Inter";
+}
+
+body {
+    background-color: var(--first-color);
+    font-family: var(--font-princial);
+    font-size: 16px;
+    font-weight: 400;
+}

@@ -1,0 +1,85 @@
+.professional {
+    padding: 4em 2em;
+    display: block;
+}
+
+.professional__image {
+    width: 20em;
+    margin: 2em 0;
+}
+
+.professional__title {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0.5em 0;
+}
+
+.professional__subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 1em;
+    
+}
+
+.professional__text {
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 1em;
+}
+
+.professional__ex {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.professional__image-logo {
+    width: 100px;
+    margin-right: 50px;
+}
+
+.professional__image-logo2 {
+    width: 150px;
+    background-color: #002f55;
+    padding: 0.5em;
+    border-radius: 10px;
+    vertical-align: 10px;
+}
+
+@media screen and (min-width:1024px) {
+    .professional {
+        padding: 4em 3em;
+    }
+
+    .professional__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+      
+    .professional__item {
+        width: calc(50% - 10px); /* 10px is for the margin between items */
+        padding: 20px;
+        margin: 5px; /* Adjust the margin as needed */
+        box-sizing: border-box;
+    }
+      
+      /* Even items (2nd, 4th, 6th, etc.) will be aligned to the right */
+    .professional__item:nth-child(even) {
+        text-align: right;  
+    }
+      
+      /* Odd items (1st, 3rd, 5th, etc.) will be aligned to the left */
+    .professional__item:nth-child(odd) {
+        text-align: left;
+    }
+      
+    .professional__ex {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .professional {
+        padding: 4em 20%;
+    }
+}

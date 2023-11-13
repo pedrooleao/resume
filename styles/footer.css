@@ -1,0 +1,32 @@
+.footer {
+    background-color: var(--second-color);
+    color: var(--first-color);
+    text-align: center;
+}
+
+.footer__title {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 1em 0;
+}
+
+.footer__content {
+    text-decoration: none;
+    color: var(--first-color);
+}
+
+.social-media {
+    font-size: 24px;
+    padding: 1em 0;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    border-radius: 4px;
+}
